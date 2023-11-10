@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-popins);
+}
+
+li {
+  list-style: none;
+}
+
+/* Variable */
+:root {
+  /*color*/
+  --primary: #01803d;
+  --secondary: #8b0101;
+  --danger: #ed1c24;
+  --white: #fff;
+  --balck: #000;
+  /*font family*/
+  --font-popins: 'Poppins', 'sans-serif';
+}
+
+/* ----------------------------------Top Ba-------------------------------- */
+.topbar a {
+  color: var(--white);
+  font-size: 15px;
+  margin: 0 20px;
+  text-decoration: none;
+}
+/* ----------------------------------Top Ba-------------------------------- */
+/* ------------------------------------Nav--------------------------------- */
+.navbar-nav li {
+  padding: 0 15px;
+  font-weight: bold;
+}
+.navbar-brand img {
+  width: 72px;
+  height: 72px;
+  z-index: 10000;
+}
+.navbar-brand span {
+  font-size: 24px;
+  font-style: italic;
+}
+
+.dropdown-hover:hover > .dropdown-menu {
+  display: block;
+  left: 0;
+}
+
+.dropdown-hover > .dropdown-toggle:active {
+  pointer-events: none;
+}
+/* -----------------------------------/Nav--------------------------------- */
+/* ----------------------------------Home---------------------------------- */
+.over-container {
+  position: relative;
+  width: 50%;
+}
+
+.over-img {
+  display: block;
+  width: 260px;
+  /* height: auto; */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 260px;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #01803d;
+}
+
+.over-container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.social-icon i {
+  width: 40px;
+  height: 40px;
+  background-color: var(--white);
+  color: rgb(9, 112, 230);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.social-icon i:hover {
+  background-color: rgb(9, 112, 230);
+  color: var(--white);
+}
+.home-academics {
+  background-image: url('../img/home/backgound.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.glance-bg {
+  background: #000000a6;
+}
+
+/* ---------------------------------/Home---------------------------------- */
+/* ---------------------Faculty of Business Studies------------------------ */
+.business-hero {
+  height: 400px;
+  background-image: linear-gradient(
+      rgba(13, 202, 76, 0.75),
+      rgba(1, 39, 11, 0.75)
+    ),
+    url('/assets/img/bup/banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.business-banner-card {
+  height: 400px;
+  background-image: linear-gradient(
+      rgba(237, 28, 36, 0.4),
+      rgba(237, 28, 36, 0.4)
+    ),
+    url('/assets/img/faculty-of-bs/banner-card.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.business-card-img img {
+  width: 220px;
+  height: 270px;
+  border-radius: 100%;
+}
+
+.faculty-profile-banner {
+  height: 200px;
+  background-image: linear-gradient(
+      rgba(13, 202, 76, 0.75),
+      rgba(1, 39, 11, 0.75)
+    ),
+    url('/assets/img/bup/banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.faculty-profile-content h1 {
+  font-size: 18px;
+  color: #d9aa16;
+}
+.faculty-profile-content p {
+  font-size: 12px;
+}
+.faculty-social-icon {
+  width: 30px;
+  height: 30px;
+  background-color: #047c3b;
+  margin: 0 5px;
+}
+.faculty-social-icon img {
+  width: 24px;
+}
+.faculty-contact h1 {
+  font-size: 14px;
+}
+.faculty-card {
+  width: 100px;
+  height: 150px;
+  background: linear-gradient(180deg, #047c3b 0%, rgba(4, 124, 59, 0.3) 100%);
+  border-radius: 15px;
+}
+.faculty-card:hover {
+  background: linear-gradient(180deg, #d9aa16 0%, rgba(217, 170, 22, 0) 100%);
+}
+.faculty-icon {
+  padding: 10xp;
+}
+.faculty-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.business-hero-section {
+  height: 500px;
+  background-image: url('/assets/img/faculty-of-bs/HeroImage');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bs-social-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  align-self: end;
+  margin-top: 15px;
+}
+.bs-social-icon a {
+  text-decoration: none;
+}
+.bs-social-icon i {
+  width: 40px;
+  height: 40px;
+  background-color: var(--white);
+  color: #ed1c24;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.bs-social-icon i:hover {
+  background-color: #ed1c24;
+  color: var(--white);
+}
+
+/* --------------------/Faculty of Business Studies------------------------ */
+
+/* ----------------------------- Vc Offices-------------------------------- */
+.vc-banner {
+  height: 400px;
+  background-image: url('/assets/img/vc/vc-cover.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.vc-contact-card {
+  background-color: red;
+  width: 370px;
+  height: 230px;
+}
+.contact-icon i {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+}
+.officer-card {
+  width: 564px;
+  height: 180px;
+}
+/* ---------------------------- /Vc Offices-------------------------------- */
+/* -----------------------------Campus Life-------------------------------- */
+/* ----------------------------/Campus Life-------------------------------- */
+
+/*=================================BONGHABONDHU======================== */
+
+.bb-navbar-nav li {
+  padding: 0 8px;
+  font-weight: bold;
+  color: var(--white);
+}
+.bb-navbar-nav li a {
+  color: var(--white);
+}
+.bb-navbar-nav li a:hover {
+  color: var(--secondary);
+}
+.bb-hero-section {
+  height: 500px;
+  background-image: url('../img/bb/Bangonondo.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bb-baner-section {
+  height: 500px;
+  background-image: linear-gradient(
+      rgba(13, 202, 76, 0.75),
+      rgba(1, 39, 11, 0.75)
+    ),
+    url('../img/bb/bb-banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bb-persons-card {
+  width: 270px;
+  height: 330px;
+  background-color: #006a4e;
+}
+.bb-card-content h1 {
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 5px;
+  color: var(--white);
+}
+.bb-card-content p {
+  font-size: 12px;
+  color: var(--white);
+  text-align: center;
+}
+.bb-banner-card {
+  width: 100%;
+  height: 585px auto;
+  background-color: #006a4e;
+}
+
+/*===============================BONGHABONDHU======================== */
+/* --------------------------Senate Member--------------------------- */
+.scm-hero {
+  height: 250px;
+  background-image: linear-gradient(
+      rgba(13, 202, 76, 0.75),
+      rgba(1, 39, 11, 0.75)
+    ),
+    url('../img/vc/vc-cover.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.scm-social-icon {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: end;
+  /* align-content: end; */
+  align-self: end;
+  margin-top: 15px;
+}
+.scm-social-icon a {
+  text-decoration: none;
+}
+.scm-social-icon i {
+  width: 40px;
+  height: 40px;
+  background-color: var(--white);
+  color: #006a4e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.scm-social-icon i:hover {
+  background-color: #006a4e;
+  color: var(--white);
+}
+
+/* -------------------------/Senate Member--------------------------- */
+/* ----------------------------Officer Profile--------------------------- */
+.officer-banner {
+  height: 200px;
+  background-image: linear-gradient(
+      rgba(13, 202, 76, 0.75),
+      rgba(1, 39, 11, 0.75)
+    ),
+    "url({{asset('../img/banner.jpg')}})";
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.profile-nav a {
+  color: gray;
+  text-decoration: none;
+  margin: 0 20px;
+  position: relative;
+  font-weight: bold;
+}
+.profile-nav a:hover {
+  color: var(--danger);
+}
+
+.profile-nav a::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: var(--danger);
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.profile-nav a:hover::after {
+  width: 100%;
+}
+
+.footer-content {
+  margin-top: 20px;
+}
+.footer-links a {
+  text-decoration: none;
+  color: var(--white);
+}
+.social-icon i {
+  width: 40px;
+  height: 40px;
+  background-color: var(--white);
+  color: rgb(9, 112, 230);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-right: 20px;
+}
+/* ---------------------------/Officer Profile--------------------------- */
+/*=============================CAMPUS LIFE======================= */
+.campus-banner {
+  height: 300px;
+  background-image: linear-gradient(
+      rgba(13, 202, 76, 0.75),
+      rgba(1, 39, 11, 0.75)
+    ),
+    url('../img/banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.card-border {
+  width: 330px;
+  height: 300px;
+  border: 10px solid red;
+}
+.card-border img {
+  margin-left: 10px;
+}
+
+.campus-safety-container {
+  height: 270px;
+}
+
+/*=============================CAMPUS LIFE======================= */
+
+/*============================ACADEMICS======================== */
+.program-type h1 {
+  font-size: 25px;
+  line-height: 24px;
+  color: #fe4a51;
+  font-weight: bold;
+}
+.program-text label h1 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #7b7b7b;
+  margin-bottom: 0;
+  cursor: pointer;
+  width: 280px;
+}
+.program-text label p {
+  font-size: 12px;
+  line-height: 15px;
+  border: 2px solid #7b7b7b;
+  padding: 7px;
+  margin-bottom: 0;
+  cursor: pointer;
+  height: 30px;
+}
+.program-text label h1:hover,.program-text label p:hover {
+  color: #01803d;
+}
+/*============================ACADEMICS======================== */
+/*============================BREAK POINT======================== */
+@media only screen and (max-width: 768px) {
+  .topbar {
+    display: none;
+  }
+}
+/*============================BREAK POINT======================== */
+

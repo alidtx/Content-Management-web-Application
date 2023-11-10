@@ -1,0 +1,15 @@
+// Custom.scss
+$primary: #047c3b;
+$secondary: #8b0101;
+$danger: #ed1c24;
+$success: #006a4e;
+$info: #94c35b;
+$muted: #808080;
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&family=Rubik&family=Work+Sans&display=swap');
+
+:root {
+  --bs-body-font-family: 'Poppins', sans-serif;
+}
